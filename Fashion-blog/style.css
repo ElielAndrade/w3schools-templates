@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; /*10px*/
+
+  --fm-heading: 'Oswald', sans-serif;
+  --fm-texting: "Open Sans";
+  
+  --bg-primary:  #ccc;;
+  --bg-secondary: #f1f1f1
+  --bg-tertiary: #000;
+  --bg-quaternary: #f44336;
+  --bg-stoneware: #616161;
+
+  --fc-primary: #000;
+  --fc-secondary: #fff;
+
+  --fs-texting: 1.5rem;
+}
+
+body{
+  font-family: var(--fm-texting);
+  font-size: var(--fs-texting);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--fm-heading);
+}
