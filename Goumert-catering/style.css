@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root{
+  font-size: 62.5%; /*10px*/
+
+  /*colors*/
+  --bg-heading: #f4f4f4;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #f1f1f1;
+
+  --fc-primary:#000;
+  --fc-secondary: #757575;
+  --fc-secondary-dark:#6B6D71;
+  --fc-tertiary: #607d8b;
+
+  --fs-heading: 3.6rem;
+  --fs-texting: 1.5rem;
+
+  --fm-heading: 'Playfair Display', serif;
+  --fm-texting: "Times New Roman", Georgia, Serif;
+}
+
+h1, h2, h3,h4, h5,h6{
+  font-family: var(--fm-heading);
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+body{
+  font-family: var(--fm-texting);
+  font-size: var(--fs-texting);
+  line-height: 1.5;
+}
+
+header{
+  padding: 1.6rem 0;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 1rem 0 rgb(0 0 0 / 12%);
+  background-color: var(--bg-primary);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  text-align: center;   
+}
+
+header a{
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: var(--fc-primary);
+  padding: 0.8rem 1.6rem;
+}
+
+header a:hover{
+  background-color: var(--bg-secondary);
+}
+
+
+header nav{
+  display: none;
+}
+
+header nav ul{
+  display: flex;
+}
+
+section.banner-wraper{
+  width: 100%;
+  padding-top: 50%;
+  position: relative;
+}
+
+.banner-wraper img{
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.banner-wraper h1{
+  position: absolute;
+  bottom: 2.4rem;
+  left: 1.2rem;
+
+  font-size: var(--fs-heading);
+  color: var(--fc-secondary-dark);
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-family: var(--fm-heading);
+}
+
+main{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.food-description{
+  padding: 9.6rem 2.4rem;
+  display: flex;
+  gap: 4.5rem;
+}
+
+.food-description .food-texting{
+  width: 100%;
+}
+
+.food-description h1{
+  font-size: var(--fs-heading);
+  text-align: center;
+
+  margin-bottom: 4rem;
+}
+
+.food-description h5{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.food-description p span{
+  padding: 0 8px;
+  background-color: var(--bg-secondary);
+  display: inline-block;
+}
+
+.food-description p + p{
+  margin-top: 2rem;
+  color: var(--fc-secondary);
+}
+
+.line{
+  border: 1px solid #eee;
+}
+
+.menu{
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.menu .food-texting{
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.menu .menu-item-wraper h4{
+  font-size: 2rem;
+}
+
+.menu .menu-item-wraper p{
+  color: var(--fc-secondary)
+}
+
+.menu img{
+  width: 100%;
+  opacity: 0.75;
+  
+  border-radius: 4px;
+}
+
+.contact-wraper{
+  padding: 9.6rem 2.4rem;
+}
+
+.contact-wraper h1{
+  font-size: var(--fs-heading);
+  margin-bottom: 4rem;
+}
+
+.contact-wraper p + p{
+  margin: 2rem 0;
+}
+
+.contact-wraper p:nth-last-of-type(2){
+  color: var(--fc-tertiary);
+}
+
+form fieldset{
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+form input{
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  
+  width: 100%;
+  padding: 2.4rem 0.8rem;
+}
+
+form button{
+  padding: 1rem 1.6rem;
+  background-color: var(--bg-secondary);
+  margin-top: 2rem;
+  
+  border: 0;
+  
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  width: fit-content;
+}
+
+form button:hover{
+  background-color: #d8d8d8;
+}
+
+footer{
+  padding: 3.2rem 0;
+  text-align: center;
+  background-color: var(--bg-secondary);
+}
+
+footer a{
+  color: var(--fc-primary);
+}
+
+footer a:hover{
+  color: green;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.6rem;
+  }
+  
+  header nav{
+    display: block;
+  }
+
+  .abount::before{
+    content: '';
+    
+    display: block;
+
+    width: 100%;
+    padding-top: 70%;
+
+    height: fit-content;
+
+    border-radius: 4px;
+
+    background-image: url(images/tablesetting2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.75;
+  }
+
+  .abount .food-texting p:nth-last-of-type(1){
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .abount .food-texting p:nth-last-of-type(1){
+    display: block;
+  }
+
+  .menu{
+    flex-direction: row;
+  }
+}
