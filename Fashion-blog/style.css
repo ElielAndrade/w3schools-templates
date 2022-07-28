@@ -34,6 +34,85 @@ h1, h2, h3, h4, h5, h6, button{
   font-weight: 400;
 }
 
+.subscribe-wraper{
+  background-color: rgba(0, 0, 0,0.4);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+
+
+  visibility: hidden;
+}
+
+.susbscribe-content{
+  margin: 3rem auto 0;
+  max-width: 768px;
+  background-color: white;
+  padding: 3.2rem;
+}
+
+.susbscribe-content .heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading h2{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 3rem;
+}
+
+.heading .icon{
+  font-size: 2.4rem;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.heading .icon:hover{
+  background-color: var(--bg-primary);
+}
+
+.susbscribe-content p{
+  font-family: var(--fm-texting);
+  margin: 1rem 0;
+}
+
+.susbscribe-content form input{
+  width: 100%;
+  padding: 0.8rem;
+  
+  border: 0;
+  border: 1px solid #ccc;
+}
+
+.susbscribe-content form button{
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  
+  border: 0;
+  background-color: #f44336;
+
+  color: var(--fc-secondary);
+  font-family: var(--fm-texting);
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  margin-top: 2rem;
+
+  cursor: pointer;
+}
+
+.susbscribe-content form button:hover{
+  background-color: var(--bg-primary);
+  color: var(--fc-primary);
+}
+
+
+
 nav{
   display: none;
 }
